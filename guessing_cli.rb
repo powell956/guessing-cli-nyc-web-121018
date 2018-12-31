@@ -1,8 +1,7 @@
 # Code your solution here!
 require 'pry'
 
-def run_guessing_game
-# def get_integer
+def get_integer
   integer_string = "1"
   integer_strings = []
 
@@ -13,13 +12,17 @@ def run_guessing_game
 
   puts "Guess a number between 1 and 6."
 
-  input = gets.chomp
+  num = gets.chomp
 
-  if integer_strings.any? { |el| el == input}
-    input = input.to_i
+  if integer_strings.any? { |el| el == num}
+    num = num.to_i
   end
-  input
-# end
+  num
+end
+
+def run_guessing_game
+
+  
 
   prng = Random.new  #prng => pseudo random number generator
   correct_answer = prng.rand(1..6)
