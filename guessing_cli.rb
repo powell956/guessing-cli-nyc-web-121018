@@ -7,9 +7,7 @@ def run_guessing_game
 
   input = gets
 
-  if input == 'exit'
-    input = 'exit'
-  else
+  if input.is_a? == Integer
     input = input.to_i
   end
 
