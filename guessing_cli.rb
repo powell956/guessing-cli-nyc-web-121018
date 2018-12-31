@@ -7,7 +7,7 @@ def run_guessing_game
 
   input = gets.chomp
 
-  if input.is_a? == Integer
+  if input.is_a? Integer
     input = input.to_i
   end
 
