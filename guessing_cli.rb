@@ -2,6 +2,7 @@
 require 'pry'
 
 def run_guessing_game
+def get_integer
   integer_string = "1"
   integer_strings = []
 
@@ -17,6 +18,8 @@ def run_guessing_game
   if integer_strings.any? { |el| el == input}
     input = input.to_i
   end
+  input
+end
 
   prng = Random.new  #prng => pseudo random number generator
   correct_answer = prng.rand(1..6)
