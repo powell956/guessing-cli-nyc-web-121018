@@ -22,7 +22,7 @@ end
 
 def run_guessing_game
 
-  
+  input = get_integer
 
   prng = Random.new  #prng => pseudo random number generator
   correct_answer = prng.rand(1..6)
