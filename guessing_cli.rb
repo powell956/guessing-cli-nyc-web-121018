@@ -12,7 +12,7 @@ def run_guessing_game
 
   puts "Guess a number between 1 and 6."
 
-  input = gets.chomp
+  input = gets
 
   if integer_strings.any? { |el| el == input}
     input = input.to_i
