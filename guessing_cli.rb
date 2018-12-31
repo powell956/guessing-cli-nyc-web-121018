@@ -5,7 +5,7 @@ def run_guessing_game
 
   puts "Guess a number between 1 and 6."
 
-  input = gets
+  input = gets.chomp
 
   if input.is_a? == Integer
     input = input.to_i
