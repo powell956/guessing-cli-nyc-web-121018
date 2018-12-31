@@ -7,19 +7,19 @@ def run_guessing_game
 
   input = gets.chomp
 
-  if input.is_a? Integer
+  if 1..6.any? { |el| el == input}
     input = input.to_i
   end
 
   prng = Random.new  #prng => pseudo random number generator
   correct_answer = prng.rand(1..6)
-  # binding.pry
+  binding.pry
 
   if input == 'exit'
     puts "Goodbye!"
     return
   elsif input != correct_answer
-    # binding.pry
+    binding.pry
     puts "The computer guessed #{correct_answer}."
     run_guessing_game
   elsif input == correct_answer
