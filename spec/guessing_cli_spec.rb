@@ -1,4 +1,5 @@
 require_relative 'spec_helper'
+require_relative '../guessing_cli.rb'
 
 describe "Guessing CLI" do
 
